@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closr | South Florida Real Estate with Heart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --senior-bg: #fdfdfb; /* Cream background, easier on eyes than pure white */
+            --senior-text: #0f172a; /* Deep slate for high contrast */
+            --senior-primary: #1e3a8a; /* Trustworthy deep blue */
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--senior-bg);
+            color: var(--senior-text);
+            /* Accessibility: Base font size 20px */
+            font-size: 1.25rem;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -0.02em;
+        }
+        .senior-accessible-text {
+            font-size: 1.25rem;
+            line-height: 2rem;
+            font-weight: 400;
+        }
+        /* Accessibility: High contrast buttons */
+        .btn-senior {
+            min-height: 4.5rem; /* 72px */
+            padding: 0 2.5rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.5rem;
+            transition: all 0.2s ease;
+        }
+        /* Focus states for keyboard navigation */
+        *:focus-visible {
+            outline: 4px solid #3b82f6;
+            outline-offset: 4px;
+        }
+        /* Custom scrollbar for better visibility */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 6px;
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DE_hFahk.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

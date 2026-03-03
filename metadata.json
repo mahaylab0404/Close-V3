@@ -1,0 +1,8 @@
+{
+  "name": "Closr - Senior-Centered Real Estate",
+  "description": "A compassionate real estate platform for South Florida seniors and agents, featuring the AI assistant Stephania, financial planning tools, and lead management.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}

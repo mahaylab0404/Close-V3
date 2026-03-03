@@ -1,0 +1,24 @@
+name = "closr-api"
+main = "functions/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+# Custom domain
+routes = [
+  { pattern = "api.zuldeira.com/*", zone_name = "zuldeira.com" }
+]
+
+# D1 Database for agent accounts and leads
+[[d1_databases]]
+binding = "DB"
+database_name = "closr_production"
+database_id = "4714e53c-9f9d-4e6c-9724-75dee4b3c906"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "production"
+
+# Secrets (set with: wrangler secret put SECRET_NAME)
+# JWT_SECRET
+# GEMINI_API_KEY
